@@ -47,9 +47,13 @@ class Movie
     # if nothing found try a regex
     if similar.count == 0
       similar = lines.select do |li|
-        res = li.join(' ').match "(.*#{title}.*)"
+        res = li.join(' ').match Regexp.new("(.*#{title}.*)", Regexp::IGNORECASE)   
       end
     end
+
+    p 'debug---------------------------------------------------------------'
+    p similar
+    p 'end-----------------------------------------------------------------'
 
     similar.map do |line|
       Movie.new title: line[0], year: line[1], poster_url: line[2], filename: line[3]

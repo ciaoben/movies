@@ -1,0 +1,16 @@
+#!/usr/bin/ruby
+require_relative './server_syncer'
+require_relative './folder_scanner'
+
+s = ServerSyncer.instance
+titles = FolderScanner.new(ARGV[0]).scan_now
+esit = s.sync titles
+
+if esit
+  puts 'sync completed'
+else
+  puts 'nothing to sync'
+end
+
+
+puts ARGV[0]

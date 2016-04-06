@@ -31,6 +31,11 @@ class Movies::API < Grape::API
     body false if m.save
   end
 
+  desc 'delete the server database'
+  delete 'db' do
+    Movie.clear_db
+  end
+
   desc 'Add a movie parsed from the agent, OLD PROCEDURE'
   params do
     requires :filename, type: String, desc: 'nameofthefile'

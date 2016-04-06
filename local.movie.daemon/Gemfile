@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'imdb'
+gem 'rspec', :require => 'spec'
+gem 'guard'
+gem 'streamio-ffmpeg'
+gem 'themoviedb'
+# gem 'commander' https://github.com/commander-rb/commander
+# DEVELOPMENT
+gem 'awesome_print'
+gem 'pry'

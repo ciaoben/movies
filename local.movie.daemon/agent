@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# how to use properly guard to monitor file outsite the current project dir:
+#   https://github.com/guard/guard/wiki/Correctly-using-the---watchdir-option
+export BUNDLE_GEMFILE=/Users/ben/pro/fantagrabber/movies/Gemfile
+#cd /Users/ben/Downloads/torrents
+bundle exec guard -w /Users/ben/Downloads/torrents/ -i &

@@ -42,6 +42,11 @@ To avoid the repetition of the require statement, you might do the following:
 =end
 gem 'fuzzy-string-match', :require => "fuzzystringmatch"
 gem 'wikipedia-client', :require => "wikipedia"
+gem 'rack-mini-profiler'
+gem 'flamegraph'
+gem 'stackprof' # ruby 2.1+ only
+gem 'memory_profiler'
+gem "puma"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

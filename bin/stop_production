@@ -1,0 +1,4 @@
+#!/bin/bash
+
+kill $(cat tmp/pids/puma.pid)
+echo 'production server stopped'

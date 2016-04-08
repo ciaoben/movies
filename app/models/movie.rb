@@ -51,10 +51,6 @@ class Movie
       end
     end
 
-    p 'debug---------------------------------------------------------------'
-    p similar
-    p 'end-----------------------------------------------------------------'
-
     similar.map do |line|
       Movie.new title: line[0], year: line[1], poster_url: line[2], filename: line[3]
     end

@@ -4,9 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action do
-    if params['rmp']
-      Rack::MiniProfiler.authorize_request
-    end
+    Rack::MiniProfiler.authorize_request
   end
 
   def index_app

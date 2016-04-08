@@ -4,4 +4,4 @@ export RAILS_ENV=production
 export RAILS_SERVE_STATIC_FILES=true
 export SECRET_KEY_BASE=dovrebbeessereunapiùsicuradioquesta
 cd /var/www/movies
-puma -e production --pidfile tmp/server/puma.pid
+puma -e production --pidfile tmp/pids/puma.pid

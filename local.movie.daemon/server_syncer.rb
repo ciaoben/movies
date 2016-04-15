@@ -8,7 +8,7 @@ class ServerSyncer
   include Singleton
 
   def initialize
-    @url = URI('http://sportasy.it:3000/movie')
+    @url = URI('http://sportasy.it:9292/movie')
     @local_db_path = '/usr/local/bin/local.movie.daemon/list.csv'
     @logger = Logger.new '/var/log/movies.log'
   end

@@ -19,6 +19,6 @@ sudo cp local.movie.daemon/movie.daemon.plist /Library/LaunchDaemons
 
 # Commands
 
-`/usr/bin/local.movie.daemon/agent` - start the agent
-`/usr/bin/local.movie.daemon/sync_now /Users/ben/Downloads/torrents/` - use this for first sync, substitute the folder to watch
-`/usr/bin/local.movie.daemon/agent` - reset local db
+`/usr/local/bin/local.movie.daemon/agent` - start the agent
+`/usr/local/bin/local.movie.daemon/sync_now /Users/ben/Downloads/torrents/` - use this for first sync, substitute the folder to watch
+`/usr/bin/local.movie.daemon/agent` - reset local db #TODO

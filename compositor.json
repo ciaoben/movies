@@ -1,0 +1,88 @@
+{
+  "name": "ciaoben/movies",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/ciaoben/movies",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/movies",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "movies",
+      "subhead": "== README",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "movies: == README",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "ciaoben",
+          "repo": "movies"
+        }
+      ],
+      "text": "v0.0.1"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>README</h1>\n<h1>Server:</h1>\n<pre>git <span class=\"hljs-keyword\">clone</span> <span class=\"hljs-title\">https</span>://github.com/ciaoben/movies.git\nbundle install\nnpm install\nrails s</pre><h1>Client:</h1>\n<pre>bundle install\nsudo mkdir /usr/local/bin/local<span class=\"hljs-selector-class\">.movie</span><span class=\"hljs-selector-class\">.daemon</span>\nsudo cp -R local<span class=\"hljs-selector-class\">.movie</span><span class=\"hljs-selector-class\">.daemon</span>/ /usr/local/bin/local<span class=\"hljs-selector-class\">.movie</span><span class=\"hljs-selector-class\">.daemon</span>\nsudo cp local<span class=\"hljs-selector-class\">.movie</span><span class=\"hljs-selector-class\">.daemon</span>/movie<span class=\"hljs-selector-class\">.daemon</span><span class=\"hljs-selector-class\">.plist</span> /Library/LaunchDaemons</pre><h1>Commands</h1>\n<p><code>/usr/local/bin/local.movie.daemon/agent</code> - start the agent\n<code>/usr/local/bin/local.movie.daemon/sync_now /Users/ben/Downloads/torrents/</code> - use this for first sync, substitute the folder to watch\n<code>/usr/bin/local.movie.daemon/agent</code> - reset local db #TODO</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/ciaoben/movies",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/ciaoben",
+          "text": "ciaoben"
+        }
+      ]
+    }
+  ]
+}

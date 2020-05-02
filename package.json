@@ -13,7 +13,8 @@
     "react": "^0.14.7",
     "react-addons-css-transition-group": "^0.14.7",
     "react-dom": "^0.14.7",
-    "webpack": "^1.12.14"
+    "webpack": "^1.12.14",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
@@ -27,8 +28,11 @@
     "webpack": "^1.12.14"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
